@@ -1,10 +1,12 @@
 
 # MOVEDB
+![Frame 797](https://github.com/kietva/movedb/assets/20819633/dea2bd30-d04e-43e0-9ac9-78f59e58805e)
 
 This is a simple app build of the Android Clean Architecture
 
-##How to build on your environment
+## How to build on your environment
 Add your API key in local.properties file.
+
 ```
 TOKEN = ACCESS TOKEN
 ```
