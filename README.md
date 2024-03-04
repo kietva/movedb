@@ -24,9 +24,9 @@ High level of abstraction
 Loose coupling between the code
 
 #### Layers
-Domain - Would execute business logic which is independent of any layer and is just a pure kotlin/java package with no android specific dependency.
-Data - Would dispense the required data for the application to the domain layer by implementing interface exposed by the domain.
-App -  Would include both domain and data layer and is android specific which executes the UI logic.
+##### Domain - Would execute business logic which is independent of any layer and is just a pure kotlin/java package with no android specific dependency.
+##### Data - Would dispense the required data for the application to the domain layer by implementing interface exposed by the domain.
+##### Presentation(ViewModel) -  Would include both domain and data layer and is android specific which executes the UI logic.
 
 ### Modules of App
 #### App
