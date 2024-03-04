@@ -13,26 +13,25 @@ TOKEN = ACCESS TOKEN
 You can create new key from [here](https://www.themoviedb.org/).
 
 ## About
-It simply loads Popular Movies list from TMDB-API and stores it in persistence storage (i.e. Room Database). Movies list will be always loaded from local database. Remote data (from API) and Local data is always synchronized. It has feature of bookmark movie which will be stored locally.
+It simply loads Popular Movies list from themoviedb. Movies list will be always loaded from remote.
 
-What is clean architecture?
+#### What is clean architecture?
 Architecture means the overall design of the project. It's the organization of the code into classes or files or components or modules. And it's how all these groups of code relate to each other. The architecture defines where the application performs its core functionality and how that functionality interacts with things like the database and the user interface.
 
-Why the cleaner approach?
+#### Why the cleaner approach?
 Separation of code in different layers with assigned responsibilities making it easier for further modification.
 High level of abstraction
 Loose coupling between the code
-Testing of code is painless
-Clean code always looks like it was written by someone who cares. - by Michael Feathers”
 
-Layers
+#### Layers
 Domain - Would execute business logic which is independent of any layer and is just a pure kotlin/java package with no android specific dependency.
 Data - Would dispense the required data for the application to the domain layer by implementing interface exposed by the domain.
-Presentation / framework - Would include both domain and data layer and is android specific which executes the UI logic.
-- Modules of App
-### App
+App -  Would include both domain and data layer and is android specific which executes the UI logic.
+
+### Modules of App
+#### App
 It uses the all the components and class releated to Android Framework. It gets the data from presentation layer and shows on UI.
-#### Presentation
+##### Presentation
 This layer's responsibility is to handle the presentation of the User Interface, but at the same time knows nothing about the user interface itself. This layer has no dependence on the Android Framework, it is a pure Kotlin module. Each ViewModel class that is created implements the ViewModel class found within the Architecture components library. This ViewModel can then be used by the UI layer to communicate with UseCases and retrieve data.
 
 ### Data
@@ -41,12 +40,11 @@ The Data layer is our access point to external data layers and is used to fetch 
 ### Domain
 The domain layer responsibility is to simply contain the UseCase instance used to retrieve data from the Data layer and pass it onto the Presentation layer.
 
-
 ## License
 
 MIT License
 
-Copyright (c) 2022 KIETVA
+Copyright (c) 2024 KIETVA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
